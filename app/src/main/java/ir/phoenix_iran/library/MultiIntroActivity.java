@@ -23,13 +23,9 @@ public class MultiIntroActivity extends AppCompatActivity {
             @Override
             public void onLayouts(View view, int position) {
 
-                if(viewPager.getCurrentItem() < 2){
-                    introHelper.setRightText("Next");
-                }
-                else {
-                    introHelper.leftTextViewHide();
-                    introHelper.setRightText("Skip");
-                }
+                /*
+                 * any code
+                 */
             }
         } , R.layout.multi_intro_1 , R.layout.multi_intro_2 , R.layout.multi_intro_3);
 

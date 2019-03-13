@@ -39,6 +39,20 @@ Add it in your root build.gradle at the end of repositories:
 # 2. Sample Single Page:
 
     private ViewPager viewPager;
+    
+    private int[] pics = {
+            R.drawable.icon_settings,
+            R.drawable.icon_settings,
+            R.drawable.icon_settings,
+            R.drawable.icon_settings
+    };
+
+    private String texts[] = {
+            "this is a test a",
+            "this is a test b",
+            "this is a test c",
+            "this is a test d"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,33 +62,9 @@ Add it in your root build.gradle at the end of repositories:
         final IntroHelper introHelper = findViewById(R.id.intro);
         viewPager = introHelper.getIntroViewPager();
 
-        final int[] pics = {
-                R.drawable.icon_settings,
-                R.drawable.icon_settings,
-                R.drawable.icon_settings,
-                R.drawable.icon_settings
-        };
-
-        final String texts[] = {
-                "this is a test a",
-                "this is a test b",
-                "this is a test c",
-                "this is a test d"
-        };
-
         introHelper.setLayout(new IntroHelper.OnLayoutSetItems() {
             @Override
             public void onLayouts(View view, int position) {
-
-                int finalLength = introHelper.getPagesLength();
-
-                if(position != finalLength){
-                    introHelper.setRightText("Next");
-                }
-                else {
-                    introHelper.leftTextViewHide();
-                    introHelper.setRightText("Skip");
-                }
 
                 TextView toolbar = view.findViewById(R.id.toolbar);
                 ImageView img = view.findViewById(R.id.img);
@@ -83,6 +73,7 @@ Add it in your root build.gradle at the end of repositories:
                 toolbar.setText(texts[position]);
                 txt.setText(texts[position]);
                 img.setImageDrawable(getResources().getDrawable(pics[position]));
+		
             }
         } , 4 , R.layout.single_intro);
 
@@ -122,13 +113,10 @@ Add it in your root build.gradle at the end of repositories:
             @Override
             public void onLayouts(View view, int position) {
 
-                if(viewPager.getCurrentItem() < 2){
-                    introHelper.setRightText("Next");
-                }
-                else {
-                    introHelper.leftTextViewHide();
-                    introHelper.setRightText("Skip");
-                }
+                /*
+                 * any code
+                 */
+		 
             }
         } , R.layout.multi_intro_1 , R.layout.multi_intro_2 , R.layout.multi_intro_3);
 

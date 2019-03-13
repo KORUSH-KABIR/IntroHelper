@@ -140,3 +140,52 @@ Add it in your root build.gradle at the end of repositories:
 
         introHelper.build();
     }
+
+
+setLayouts(OnLayoutSetItems onLayoutSetItems , @LayoutRes int... layouts)
+
+setLayout(OnLayoutSetItems onLayoutSetItems , int layoutLength , @LayoutRes int layout)
+
+setOnLeftClickListener(OnClickListener onLeftClickListener)
+
+setOnRightClickListener(OnClickListener onRightClickListener)
+
+leftTextViewHide()
+
+leftTextViewShow()
+
+rightTextViewHide()
+
+rightTextViewShow()
+
+setLeftText(String text)
+
+setLeftTextColor(int color)
+
+setRightText(String text)
+
+setRightTextColor(int color)
+
+setLineColor(int color)
+
+setSelectedShape(@DrawableRes int shape)
+
+setUnselectedShape(@DrawableRes int shape)
+
+showBottomBar(boolean show)
+
+setBottomBarBackground(int color)
+
+getLeftTextView()
+
+getRightTextView()
+
+getLine()
+
+getIntroViewPager()
+
+getPagesLength()
+
+getCurrentPageSelected()
+
+build()

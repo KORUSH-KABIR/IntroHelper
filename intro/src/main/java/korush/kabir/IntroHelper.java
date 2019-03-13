@@ -186,7 +186,7 @@ public final class IntroHelper extends RelativeLayout {
         this.ihUnselectedDrawable = getResources().getDrawable(shape);
     }
 
-    public void setShowBottomBar(boolean show){
+    public void showBottomBar(boolean show){
         if(show){
             this.layoutBottomBar.setVisibility(View.VISIBLE);
         }

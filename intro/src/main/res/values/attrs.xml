@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="intro" >
+
+        <attr name="ihRightText" format="string"/>
+        <attr name="ihLeftText"  format="string"/>
+
+        <attr name="ihLeftTextColor"  format="color"/>
+        <attr name="ihRightTextColor" format="color"/>
+
+        <attr name="ihLineColor" format="color"/>
+
+        <attr name="ihSelectedDrawable"   format="integer"/>
+        <attr name="ihUnselectedDrawable" format="integer"/>
+
+    </declare-styleable>
+
+</resources>

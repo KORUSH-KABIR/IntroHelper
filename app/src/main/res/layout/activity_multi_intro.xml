@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray800"
+    tools:context=".MultiIntroActivity">
+
+    <korush.kabir.IntroHelper
+        android:id="@+id/intro"
+        app:ihRightText="Next"
+        app:ihLeftText="Skip"
+        app:ihLeftTextColor="#fff"
+        app:ihRightTextColor="#fff"
+        app:ihLineColor="#fff"
+        app:ihSelectedDrawable="@drawable/shape"
+        app:ihUnselectedDrawable="@drawable/shape_outline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

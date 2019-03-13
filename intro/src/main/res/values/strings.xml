@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">intro</string>
+    <string name="txtRight">txtRight</string>
+    <string name="txtLeft">txtLeft</string>
+</resources>

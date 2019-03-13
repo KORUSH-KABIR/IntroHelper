@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ClickableCircleWhite" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:theme">@style/styleRippleWhiteMe</item>
+    </style>
+
+    <style name="styleRippleWhiteMe" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+</resources>

@@ -14,14 +14,14 @@ Add it in your root build.gradle at the end of repositories:
   # Step 2. Add the dependency
   
   	dependencies {
-	        implementation 'com.github.KORUSH-KABIR:Library:2.0.6'
+	        implementation 'com.github.KORUSH-KABIR:IntroHelper:1.0.0'
 	}
 	
 
 /////////////////////////////////////
 
 
-# 1. Insert xml:
+# 1. xml:
 
     <korush.kabir.IntroHelper
         android:id="@+id/intro"
@@ -34,6 +34,7 @@ Add it in your root build.gradle at the end of repositories:
         app:ihUnselectedDrawable="@drawable/shape_outline"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 
 # 2. Sample Single Page:
 
@@ -103,6 +104,7 @@ Add it in your root build.gradle at the end of repositories:
 
         introHelper.build();
     }
+
 
 # 2. Sample Multi Page:
 
